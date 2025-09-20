@@ -1,0 +1,42 @@
+    /* Basic CSS Reset */
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 100%; /* Base font size for rem units */
+    }
+
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    input, button, textarea, select {
+        font: inherit;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+    }
+/* Mobile First (max width: 576px) */
+
+/* */
+
+ /* Medium screens (e.g., tablets) */
+    @media (min-width: 577px) and (max-width: 992px) {
+        /* Styles for medium screens */
+    }
+
+    /* Large screens (e.g., desktops) */
+    @media (min-width: 993px) {
+        /* Styles for large screens */
+    }
+ */
