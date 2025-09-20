@@ -1,0 +1,174 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Patua+One);
+
+* {
+    box-sizing: border-box;
+}
+
+/* Your CSS goes here  */
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('images/bg.jpg');
+    background: #09430d;
+    color: #222;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/grass.jpg') no-repeat center/cover;
+    padding: 2rem 1rem;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .hero .tagline {
+    margin: 0.5rem 0 1rem;
+    color: #FFD700;
+    font-weight: bold;
+  }
+  
+   /* Flexbox for nav */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   /* mobile-first stacked */
+    gap: 0.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 2rem 1rem;
+    background: linear-gradient(to bottom, #c8e6c9, #f4f4f4);
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .about h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Services Section */
+  .services {
+    background: #fff;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .services h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .services ul {
+    display: grid;
+    grid-template-columns: 1fr; /* mobile-first single column */
+    gap: 1rem;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .services li {
+    margin: 0.8rem 0;
+    font-size: 1rem;
+  }
+  
+  .services strong {
+    color: #1b5e20;
+  }
+  
+  /* Footer Section */
+  .contact {
+    background: #09430d;
+    color: #fff;
+    padding: 2rem 1rem;
+  }
+  
+  .contact h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact .phone {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #f6d96d;
+    text-decoration: underline;
+  }
+  
+  /* Flexbox for icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .social-icons img {
+    width: 28px;
+    margin: 0 10px;
+  }
+  
+  .contact p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (min-width: 768px) {
+    .nav-links {
+      flex-direction: row; /* turn nav horizontal */
+      justify-content: center;
+    }
+  
+    .services ul {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero h1 { font-size: 2.5rem; }
+    .profile-pic { width: 200px; height: 200px; }
+  }
+

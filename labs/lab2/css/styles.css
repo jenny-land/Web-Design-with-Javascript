@@ -1,0 +1,73 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease; /* Transition example */
+}
+
+/* Mobile-first layout */
+header, main, footer {
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.2s ease; /* Transition for hover */
+}
+
+nav a:hover,
+nav a:focus {
+  color: #003366;
+}
+
+/* Animation on page load */
+.intro {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Keyframes */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Layout: Tablets and up */
+@media (min-width: 600px) {
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* Respect prefers-reduced-motion */ 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  } 
+}
