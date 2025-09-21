@@ -1,69 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <style>
-    /* Basic Reset + Starter Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header, nav, main, footer {
-      padding: 1rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    header {
-      background: #5bd8d4;
-      color: white;
-      text-align: center;
-    }
-    nav {
-      background: #eee;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Portfolio - Jennifer Landers</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="profile-section">
+                <div class="profile-img">
+                    <span class="profile-placeholder">👤</span>
+                </div>
+                <h1>Jennifer Landers</h1>
+                <p class="intro">
+                    Welcome to my Web Design with Javascript portfolio! I'm a passionate student exploring the world of UX and Web Design, 
+                    creating innovative solutions and learning cutting-edge technologies. This page showcases my journey 
+                    through various projects and practice labs in my web design with javascript course.
+                </p>
+            </div>
+        </div>
+    </header>
 
-  <header>
-    <img src="hello.jpg" style="display: block; margin: auto; max-height: 100%; max-width: 100%">
-    <h1>Welcome to My Classwork Website</h1>
-    <p>more coming soon</p>
-  </header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Projects Section -->
+            <section class="section projects-section">
+                <h2>Course Projects & Practice Labs</h2>
+                
+                <div class="projects-grid">
+                    <!-- Lab 0 -->
+                    <article class="project-card">
+                        <div class="status-indicator status-completed">Completed</div>
+                        <h3 class="project-title">Lab 0: Web Pg from Static Comp</h3>
+                        <p class="project-due">Due: August 30, 2025</p>
+                        <p class="project-description">
+                            Attempted to recreate a website from the image as a warm-up back into web design.
+                        </p>
+                        <a href="https://github.com/yourusername/hw1-portfolio" class="project-link" target="_blank">View Repository</a>
+                    </article>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Labs</a>
-    <a href="#">Projects</a>
-  </nav>
+                    <!-- Lab 1 -->
+                    <article class="project-card">
+                        <div class="status-indicator status-completed">Completed</div>
+                        <h3 class="project-title">Lab 1: CSS. Layout w/ Flexbox & Grid</h3>
+                        <p class="project-due">Due: September 5, 2025</p>
+                        <p class="project-description">
+                            Created a grid gallery web site using Grid and Flexbox with responsive layout. 
+                        </p>
+                        <a href="https://github.com/yourusername/hw2-jump-page" class="project-link" target="_blank">View Repository</a>
+                    </article>
 
-  <main>
-    <h2>Main Content</h2>
-    <p><img src="hello.jpg" style="display: block; margin: auto; max-height: 100%; max-width: 100%"></p>
-  </main>
+                    <!-- Lab 2 -->
+                    <article class="project-card">
+                        <div class="status-indicator status-in-progress">In Progress</div>
+                        <h3 class="project-title">Lab 2: CSS Transitions & Animations</h3>
+                        <p class="project-due">Due: September 11, 2025</p>
+                        <p class="project-description">
+                            Practiced adding transitions and animations to create a webpage that was engaging. Included prefers no motion to make more accessible. 
+                        <a href="https://github.com/yourusername/lab1-flexbox" class="project-link" target="_blank">View Repository</a>
+                    </article>
 
-  <footer>
-    <p>&copy; 2025  Jennifer Landers</p>
-  </footer>
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="status-indicator status-upcoming">Upcoming</div>
+                        <h3 class="project-title">Project 1: This Course Jump Page</h3>
+                        <p class="project-due">Due: October 19, 2025</p>
+                        <p class="project-description">
+                            built a dynamic mobile first web page to host all assignment links. Included Flexbox, grid, reponsive website, accessible, WAG 
+                        </p>
+                        <a href="https://github.com/yourusername/hw3-javascript" class="project-link" target="_blank">View Repository</a>
+                    </article>
+
+                    <!-- Lab 3 -->
+                    <article class="project-card">
+                        <div class="status-indicator status-upcoming">Upcoming</div>
+                        <h3 class="project-title">Lab 3: Mouse Events</h3>
+                        <p class="project-due">Due: September 25, 2025</p>
+                        <p class="project-description">
+                            To be completed
+                        </p>
+                        <a href="https://github.com/yourusername/lab2-responsive" class="project-link" target="_blank">View Repository</a>
+                    </article>
+
+                    <!-- Lab 4 -->
+                    <article class="project-card">
+                        <div class="status-indicator status-upcoming">Upcoming</div>
+                        <h3 class="project-title">Lab 4: Changing the DOM</h3>
+                        <p class="project-due">Due: October 2, 2025</p>
+                        <p class="project-description">
+                          To be completed
+                        </p>
+                        <a href="https://github.com/yourusername/final-project" class="project-link" target="_blank">View Repository</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section skills-section">
+                <h2>Technical Skills</h2>
+                <p>Throughout this course, I've developed proficiency in various web technologies and tools:</p>
+                <div class="skills-container">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">Web Accessibility</span>
+                    <span class="skill-tag">UX/UI Design</span>
+                    <span class="skill-tag">Version Control</span>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section contact-section">
+                <h2>Connect With Me</h2>
+                <p>Feel free to reach out to discuss web development, collaborate on projects, or just say hello!</p>
+                <div class="contact-info">
+                    <a href="mailto:jenlanders85@gmail.com">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-text">jenlanders85@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/jenny-land" target="_blank">
+                        <div class="contact-item">
+                            <span class="contact-icon">🐙</span>
+                            <span class="contact-text">github.com/jenny-land</span>
+                        </div>
+                    </a>
+                    <a href="www.linkedin.com/in/jennifer-landers-uxdesign" target="_blank">
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <span class="contact-text">www.linkedin.com/in/jennifer-landers-uxdesign</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jennifer Landers. Web Design with Javascript Course Portfolio.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
+
+<!--Notes: 
+x update links in contact cards
+- add titles to a href in contact cards
+x update assignment cards: lab titles
+x update dates of assignments
+- add all assignments
+- update links to assignments
+- consider changing colors
+- update assignment statuses
+- 
+-->
