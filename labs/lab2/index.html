@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animation/transition Practice</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional web design club portfolio showcasing modern CSS techniques, accessibility, and responsive design">
+    <title>Ctrl Z: Designers & Developers Collaborative - Design Excellence</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Site</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-  </header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="header-container">
+            <h1>Ctrl Z: Designers & Developers Collaborative</h1>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#main" aria-current="page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section class="intro">
-      <h2>Hello There!</h2>
-      <!-- <img src="images/hello.jpg" alt="hello image"/> -->
-      <p>See if you can spot my transition and animation... refresh the page and pay attention to the phrase above. Then look for a hover effect if you haven't spotted it already.</p>
-    </section>
-  </main>
+    <main id="main">
+        <section class="intro">
+            <h2>Crafting Digital Excellence</h2>
+            <p>Welcome to our professional web design collective. We transform ideas into stunning, accessible, and user-centered digital experiences. Discover the perfect blend of creativity, functionality, and cutting-edge technology.</p>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Jennifer Landers</p>
-    <p>This fictitious website was created as an academic exercise for the Diablo Valley College course, ARTDM-171:Web Design I. In no way should this content be considered or used as a source of factual public information</p>
-  </footer>
+        <section class="features" aria-label="Key features">
+            <article class="feature-card">
+                <h3>Mobile-First Design</h3>
+                <p>Every project begins with mobile users in mind. Our responsive approach ensures seamless experiences across all devices, from smartphones to large desktop displays.</p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Accessibility Focus</h3>
+                <p>We build inclusive web experiences that work for everyone. Our commitment to WCAG standards ensures your content reaches the widest possible audience.</p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Modern CSS Mastery</h3>
+                <p>Leveraging the latest in CSS Grid, Flexbox, and custom properties, we create maintainable, scalable stylesheets that power beautiful user interfaces.</p>
+            </article>
+        </section>
+
+        <section class="cta">
+            <h3>Ready to Elevate Your Web Presence?</h3>
+            <p>Let's collaborate on creating something extraordinary that showcases your brand's unique story.</p>
+            <a href="#contact" class="btn" role="button">Start Your Project</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Ctrl Z: Designers & Developers Collaborative - Full Team Web Design</p>
+            <p>This portfolio demonstrates advanced HTML5, CSS3, responsive design, and accessibility best practices. Built with modern web standards and optimized for performance across all devices.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
-
